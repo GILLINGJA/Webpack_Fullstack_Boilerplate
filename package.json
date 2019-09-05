@@ -1,0 +1,29 @@
+{
+  "name": "fullstack_boilerplate_node-express-react-webpack",
+  "version": "1.0.0",
+  "description": "Fullstack boilerplate using Node.js and Express for the backend, React for the frontend, and Webpack to bundle it all together!",
+  "main": "src/server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GILLINGJA/Webpack_Fullstack_Boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "express",
+    "node",
+    "react",
+    "webpack",
+    "babel",
+    "redux",
+    "react-redux"
+  ],
+  "author": "Josh Gilling",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GILLINGJA/Webpack_Fullstack_Boilerplate/issues"
+  },
+  "homepage": "https://github.com/GILLINGJA/Webpack_Fullstack_Boilerplate#readme"
+}
