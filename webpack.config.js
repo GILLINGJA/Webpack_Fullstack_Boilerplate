@@ -71,6 +71,15 @@ module.exports = {
             }
           }
         ]
+      },
+      // for asset files (images, vectors, fonts, etc.)
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader',
+        options: {
+          fallback: 'responsive-loader',
+          limit: 10000
+        }
       }
     ]
   },
