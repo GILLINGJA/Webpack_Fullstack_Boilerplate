@@ -16,7 +16,7 @@
     $ git remote rename origin [upstream repo]
     $ git remote add origin http:/github.com/[your github]/[personal repo]
   </code>
-</pre>>
+</pre>
 <p>Then whenever you want to update your repo to reflect any updates to this repo, use this command:</p>
 <code>$ git fetch [upstream repo]</code>
 <p>Or, you can just replace the origin repo so that it is no longer connected to this repo with by using this command:</p>
