@@ -2,7 +2,7 @@ const path = require('path');
 // Loads template at public/index.html and injects the output webpack bundle
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // removes build folder(s) before building
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // Used to extract css from being bundled with js files (for production only as it slows build process)
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -10,13 +10,13 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 const outputDirectory = 'dist';
 
 module.exports = {
-  entry: ['babel-polyfill', 'src/client/index.js'],
+  entry: ['babel-polyfill', './src/client/index.js'],
   output: {
     path: path.join(__dirname, outputDirectory),
     filename: isDevelopment ? 'bundle.js' : 'bundle.[hash].js'
   },
   plugins: [
-    new CleanWebpackPlugin([outputDirectory]),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       favicon: './public/favicon.ico'
