@@ -3,13 +3,13 @@
 
 <h2>Usage</h2>
 <p>To use this repo, simply clone it down to your machine by typing the following into your terminal in your desired directory:</p>
-<code style=display:block;white-space:pre-wrap>
+<code style='display:block;white-space:pre-wrap'>
   $ git init
   $ git clone https://github.com/GILLINGJA/Webpack_Fullstack_Boilerplate.git .
 </code>
 <p>Then, you can either add your own remote and keep this repo as an update source for your own repo (recommended) 
   - for this method type the following commands into your terminal:</p>
-<code style=display:block;white-space:pre-wrap>
+<code style='display:block;white-space:pre-wrap'>
   $ git remote rename origin [upstream repo]
   $ git remote add origin http:/github.com/[your github]/[personal repo]
 </code>
